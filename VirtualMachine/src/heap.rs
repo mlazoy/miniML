@@ -82,11 +82,12 @@ impl Heap {
         let old_addr = block.to_pointer();
         let header = self.heap[old_addr];
         if header.is_pointer() && self.in_to_space(header.to_pointer()) { //is fw ptr
-            return None;
+            return Some(header);
         }
         let blocksize = ((header.to_int() >> 9) & 0x7FFFFF) as usize;
         if self.next_free_slot + blocksize >= self.to_base_ptr + self.semi_space_size {
-            panic!("Not enough space; Failed to move allocated objects from 'from' space to 'to' space.\n");
+            panic!("Not enough space; 'to' size: {}, requested moving {} objects from 'from'\n", 
+            (self.next_free_slot - self.to_base_ptr), blocksize);
         }
         let new_base_addr = self.next_free_slot;
         for i in 0..(blocksize + 1) {
@@ -102,6 +103,7 @@ impl Heap {
     }
 
     pub fn realloc(&mut self, roots: &mut [Word]) -> bool { //returns true if successful
+        self.print_heap(); // check heap before gc fro debugging only
         self.next_free_slot = self.to_base_ptr; 
         // 1. copy objects from 'from' space to 'to' space
         for root in roots.iter_mut() {
@@ -131,8 +133,14 @@ impl Heap {
 
         // 3. prepare for next round
         self.swap_spaces();
-        println!("Freed {} blocks.\n", self.semi_space_size - (self.next_free_slot - self.from_base_ptr));
-        return true;
+        println!("Freed {} blocks.\n", self.semi_space_size - (self.next_free_slot - self.from_base_ptr - 1));
+        self.print_heap(); // check heap after gc fro debugging only
+        if self.next_free_slot < self.from_base_ptr + self.semi_space_size {
+            true
+        } else {
+            println!("'to' is full; size : {}.\n", self.next_free_slot- self.from_base_ptr);
+            false
+        }
 
     }
 
@@ -174,7 +182,7 @@ impl Heap {
     #[cfg(debug_assertions)]
     pub fn print_heap (&self) {
         print!("Heap: ");
-        for i in 0..self.next_free_slot {
+        for i in self.from_base_ptr..self.next_free_slot {
             print!("$ {:?} ", self.heap[i]);
         }
         println!("$");
@@ -182,6 +190,16 @@ impl Heap {
 
     #[cfg(not(debug_assertions))]
     pub fn print_heap(&self) {}
+
+
+    #[cfg(debug_assertions)]
+    fn print_debug_msg(msg:&str) {
+        println!("[DEBUG]: {}", msg);
+    }
+
+    #[cfg(not(debug_assertions))]
+    fn print_debug_msg(&self) {}
     
     }
+
 

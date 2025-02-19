@@ -5,7 +5,7 @@ use std::io::Read;
 use std::time::Instant;
 
 pub const STACK_SIZE: usize = 1 << 14;
-pub const HEAP_SIZE: usize = 1 << 20;
+pub const HEAP_SIZE: usize = 1 << 20; 
 
 /// The VM struct
 pub struct VM {
@@ -43,6 +43,15 @@ impl VM {
 
     #[cfg(not(debug_assertions))]
     fn print_state(&self) {}
+
+
+    #[cfg(debug_assertions)]
+    fn print_debug_msg(msg:&str) {
+        println!("[DEBUG]: {}", msg);
+    }
+
+    #[cfg(not(debug_assertions))]
+    fn print_debug_msg(&self) {}
 
     #[inline(always)]
     fn fetch_byte(&mut self) -> u8 {
@@ -183,21 +192,21 @@ impl VM {
         println!("Running garbadge collection...\n");
         let mut roots:Vec<Word> = Vec::new();
 
-        for item in self.stack.iter() {
-            if item.is_pointer() {
-                roots.push(*item)
-            } 
+        for i in 0..self.stack_ptr {
+            if self.stack[i].is_pointer() {
+                roots.push(self.stack[i]);
+            }
         }
         // for debugging
-        //roots.iter().for_each(|item| println!("{:?}", item));
-        println!("Roots found: {}\n", roots.len());
+        print!("Roots found: {}\n", roots.len());
+        roots.iter().for_each(|item| println!("{:?}", item));
 
         if self.heap.realloc(&mut roots) {
             // update heap pointers in stack
             let mut roots_ptr = 0;
-            for item in self.stack.iter_mut() {
-                if item.is_pointer() {
-                    *item = roots[roots_ptr];
+            for i in 0..self.stack_ptr {
+                if self.stack[i].is_pointer() {
+                    self.stack[i] = roots[roots_ptr];
                     roots_ptr += 1;
                 } 
             }
@@ -419,11 +428,13 @@ impl VM {
                         let n = n_word.to_int() as usize; 
                         let tag = tag_word.to_int() as u8; 
                         //println!("popping {} items\n", n);
-                        let fields:Vec<Word> = self.pop_n(n,3);
+                        let mut fields:Vec<Word> = self.pop_n(n,3);
                         let alloca = self.heap.alloc(n,tag,&fields);
                         let heap_addr = match alloca {
                             None => {
                                 if self.trigger_gc() {   // run gc and try again
+                                    // need to gather again fields cause some pointers changed
+                                    fields = self.pop_n(n,3);
                                     let new_alloca = self.heap.alloc(n,tag,&fields);
                                     match new_alloca {
                                         None => panic!("Failed to allocate heap memory.\n"),
@@ -460,3 +471,4 @@ impl VM {
         }
     }
 }
+
