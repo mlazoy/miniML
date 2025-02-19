@@ -64,12 +64,12 @@ impl Heap {
     }
 
     // helpers for Cheney's GC
-    fn in_from_space_(&self, _addr: usize) -> bool {
-        _addr >= self.from_base_ptr && _addr < self.from_base_ptr + self.semi_space_size
+    fn in_from_space_(&self, addr: usize) -> bool {
+        addr >= self.from_base_ptr && addr < self.from_base_ptr + self.semi_space_size
     }
 
-    fn in_to_space(&self, _addr: usize) -> bool {
-        _addr >= self.to_base_ptr && _addr < self.to_base_ptr + self.semi_space_size
+    fn in_to_space(&self, addr: usize) -> bool {
+        addr >= self.to_base_ptr && addr < self.to_base_ptr + self.semi_space_size
     }
 
     fn swap_spaces(&mut self) {
@@ -133,12 +133,18 @@ impl Heap {
 
         // 3. prepare for next round
         self.swap_spaces();
-        println!("Freed {} blocks.\n", self.semi_space_size - (self.next_free_slot - self.from_base_ptr - 1));
+        self.print_debug_msg(&format!(
+            "Freed {} blocks.",
+            self.semi_space_size - (self.next_free_slot - self.from_base_ptr - 1)
+        ));
         self.print_heap(); // check heap after gc fro debugging only
         if self.next_free_slot < self.from_base_ptr + self.semi_space_size {
             true
         } else {
-            println!("'to' is full; size : {}.\n", self.next_free_slot- self.from_base_ptr);
+            self.print_debug_msg(&format!(
+                "'to' is full; size : {}.\n", 
+                self.next_free_slot- self.from_base_ptr
+            ));
             false
         }
 
@@ -151,7 +157,9 @@ impl Heap {
             return None // call GC from vm.rs when None is returned
         } 
         let header = (_size << 9) & 0x7FFFFF | ((_tag as usize) & 0xFF);
-        //println!("Allocating new block with header: {}", header);
+        self.print_debug_msg(&format!(
+            "Allocating new block with header: {}", header
+        ));
         let ret = self.next_free_slot;
         self.heap[ret] = Word::from_int(header as i32);
         for i in 1.._size+1 {
@@ -168,7 +176,9 @@ impl Heap {
             panic!("Segmentation fault; address out of bounds.\n");
         } 
         let header = self.heap[addr.to_pointer()];
-        //println!("Accessing block with header:{}", header.to_pointer());
+        // self.print_debug_msg(&format!(
+        //     "Accessing block with header:{}", header.to_pointer()
+        // ));
         let block_sz = header.to_int() as usize >> 8;
         if offset > block_sz {
             panic!("Segmentation fault; block offset out of bounds; offset:{}, blocksize:{}\n",
@@ -193,13 +203,12 @@ impl Heap {
 
 
     #[cfg(debug_assertions)]
-    fn print_debug_msg(msg:&str) {
-        println!("[DEBUG]: {}", msg);
+    fn print_debug_msg(&self, msg:&str) {
+        println!("{}", msg);
     }
 
     #[cfg(not(debug_assertions))]
-    fn print_debug_msg(&self) {}
+    fn print_debug_msg(&self, _msg:&str) {}
     
     }
-
 

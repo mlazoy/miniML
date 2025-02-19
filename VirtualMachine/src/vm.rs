@@ -5,7 +5,7 @@ use std::io::Read;
 use std::time::Instant;
 
 pub const STACK_SIZE: usize = 1 << 14;
-pub const HEAP_SIZE: usize = 1 << 20; 
+pub const HEAP_SIZE: usize = 1 << 20; // 1 << 6 for testing
 
 /// The VM struct
 pub struct VM {
@@ -46,12 +46,12 @@ impl VM {
 
 
     #[cfg(debug_assertions)]
-    fn print_debug_msg(msg:&str) {
+    fn print_debug_msg(&self, msg:&str) {
         println!("[DEBUG]: {}", msg);
     }
 
     #[cfg(not(debug_assertions))]
-    fn print_debug_msg(&self) {}
+    fn print_debug_msg(&self, _msg:&str) {}
 
     #[inline(always)]
     fn fetch_byte(&mut self) -> u8 {
@@ -153,7 +153,7 @@ impl VM {
                 items.push(self.stack[self.stack_ptr-offs-i]);
             }
             items.reverse();
-            //items.iter().for_each(|item| println!("{:?}", item));
+            //items.iter().for_each(|item| print!("{:?}, ", item));
             items
         }
     }
@@ -189,7 +189,9 @@ impl VM {
 
     // scans roots & returns the heap address of the newly allocated item if gc run successfully
     fn trigger_gc(&mut self) -> bool { 
-        println!("Running garbadge collection...\n");
+        self.print_debug_msg(&format!(
+            "Running garbadge collection...\n"
+        ));
         let mut roots:Vec<Word> = Vec::new();
 
         for i in 0..self.stack_ptr {
@@ -198,8 +200,14 @@ impl VM {
             }
         }
         // for debugging
-        print!("Roots found: {}\n", roots.len());
-        roots.iter().for_each(|item| println!("{:?}", item));
+        self.print_debug_msg(&format!
+            ("Roots found: {}\n", roots.len()
+        ));
+        self.print_debug_msg(&format!(
+            "Roots: {:?}",
+            roots.iter().map(|item| format!("{:?}", item)).collect::<Vec<String>>().join(", ")
+        ));
+        
 
         if self.heap.realloc(&mut roots) {
             // update heap pointers in stack
@@ -427,7 +435,9 @@ impl VM {
                         let (n_word, tag_word) = self.pop_2(); //returns top second
                         let n = n_word.to_int() as usize; 
                         let tag = tag_word.to_int() as u8; 
-                        //println!("popping {} items\n", n);
+                        // self.print_debug_msg(&format!(
+                        //     "popping {} items\n", n
+                        // ));
                         let mut fields:Vec<Word> = self.pop_n(n,3);
                         let alloca = self.heap.alloc(n,tag,&fields);
                         let heap_addr = match alloca {
@@ -455,7 +465,9 @@ impl VM {
                     Opcode::Load => {
                         let addr = self.pop();
                         let i = self.fetch_word() as usize;
-                        //println!("Loading from block:{}, offset:{}\n", addr.to_int(), i);
+                        // self.print_debug_msg(&format!(
+                        // "Loading from block:{}, offset:{}\n", addr.to_int(), i
+                        // ));
                         self.heap.print_heap(); // just for debugging
                         let val = self.heap.get_item(addr,i);
                         self.push(val, 1);
@@ -471,4 +483,3 @@ impl VM {
         }
     }
 }
-
