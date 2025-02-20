@@ -240,9 +240,9 @@ inferType debug env (Inl _ l) = do
   a <- freshTVar 
   return (TSum t (TVar a), c) 
 inferType debug env (Inr _ r) = do 
-  (t, _) <- inferType debug env r -- TODO! constraints here ?
+  (t, c) <- inferType debug env r 
   a <- freshTVar 
-  return (TSum (TVar a) t, S.empty) 
+  return (TSum (TVar a) t, c) -- TODO! constraints here ?
 inferType debug env (Case _ e1 x e2 y e3) = do 
   (t1, c1) <- inferType debug env e1 
   a <- freshTVar 
@@ -252,7 +252,7 @@ inferType debug env (Case _ e1 x e2 y e3) = do
   let c' = [(t1, TSum (TVar a) (TVar b), getPosn e1), (t2, t3, getPosn e3)]  
   let c_union = insertCnstr c' (S.unions [c1, c2, c3])
   _ <- lift $ traceIfDebug debug ("Constraints(Case): " ++ showConstraints c_union)
-  return (TSum (TVar a) (TVar b), c_union)
+  return (t2, c_union)
 -- Let 
 inferType debug env (Let _ x (Just tx) e1 e2) = do -- Annotated
   (t1, c1) <- inferType debug env e1;

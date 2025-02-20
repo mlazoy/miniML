@@ -3,6 +3,9 @@ module Main (main) where
 import Test.Tasty
 import Test.Tasty.QuickCheck
 
+import qualified Data.Map as M
+import qualified Data.Set as S 
+
 import MiniML
 import Gen
 
@@ -27,8 +30,17 @@ parserRoundTrip =
 
 
 testTypeInf :: Property
-testTypeInf = counterexample "FILL IN HERE!" False
-
+testTypeInf = forAll genExpType $ \(exp, gen_typ) ->
+  case inferTypeTop exp of 
+    Left err -> counterexample ("\nType error: " ++ show err) False 
+    Right inf_typ_scheme -> do 
+          let inf_typ = case inf_typ_scheme of 
+                  Type typ -> typ 
+                  Forall _ t -> t
+                  in 
+              case unify False (insertCnstr [(gen_typ, inf_typ, nowhere)] S.empty) of
+              Right subst -> applySubst inf_typ subst === gen_typ
+              Left err  -> counterexample ("\nUnification error: " ++ show err) False 
 
 someProperty :: Property
 someProperty =

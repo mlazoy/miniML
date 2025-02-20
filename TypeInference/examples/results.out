@@ -1,0 +1,51 @@
+
+Running bool.ml
+bool
+
+Running fact.ml
+int
+
+Running fib.ml
+int
+
+Running fold.ml
+int
+
+Running fst_poly.ml
+int * bool
+
+Running fst.ml
+int
+
+Running fun.ml
+int -> int -> int
+
+Running head.ml
+int * bool
+
+Running hof.ml
+int
+
+Running ite.ml
+int
+
+Running map.ml
+forall a8 a9. (a8 -> a9) -> list a8 -> list a9
+
+Running map1.ml
+list int * list bool
+
+Running mapTuple.ml
+forall a6 a7. (a6 -> a7) -> a6 * a6 -> a7 * a7
+
+Running mapTuple1.ml
+int * int * (bool * bool)
+
+Running mapTuple2.ml
+forall a8 a9. (a8 -> a9) -> a8 * a8 -> a9 * a9
+
+Running poly.ml
+int * bool
+
+Running sum.ml
+int
