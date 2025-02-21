@@ -1,0 +1,1001 @@
+Run #1:
+act
+  Parser round trip: OK (7.28s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.31s)
+Run #2:
+act
+  Parser round trip: OK (7.14s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.17s)
+Run #3:
+act
+  Parser round trip: OK (6.10s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.13s)
+Run #4:
+act
+  Parser round trip: OK (6.69s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.72s)
+Run #5:
+act
+  Parser round trip: OK (6.57s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.61s)
+Run #6:
+act
+  Parser round trip: OK (6.76s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.80s)
+Run #7:
+act
+  Parser round trip: OK (6.27s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.31s)
+Run #8:
+act
+  Parser round trip: OK (6.67s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.70s)
+Run #9:
+act
+  Parser round trip: OK (8.02s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (8.05s)
+Run #10:
+act
+  Parser round trip: OK (5.93s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.97s)
+Run #11:
+act
+  Parser round trip: OK (4.63s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (4.66s)
+Run #12:
+act
+  Parser round trip: OK (5.78s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.83s)
+Run #13:
+act
+  Parser round trip: OK (5.66s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.68s)
+Run #14:
+act
+  Parser round trip: OK (5.35s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.02s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.37s)
+Run #15:
+act
+  Parser round trip: OK (5.18s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.22s)
+Run #16:
+act
+  Parser round trip: OK (5.74s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.80s)
+Run #17:
+act
+  Parser round trip: OK (6.01s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.05s)
+Run #18:
+act
+  Parser round trip: OK (6.33s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.36s)
+Run #19:
+act
+  Parser round trip: OK (5.36s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.40s)
+Run #20:
+act
+  Parser round trip: OK (6.16s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.19s)
+Run #21:
+act
+  Parser round trip: OK (5.39s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.02s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.42s)
+Run #22:
+act
+  Parser round trip: OK (6.65s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.69s)
+Run #23:
+act
+  Parser round trip: OK (5.72s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.77s)
+Run #24:
+act
+  Parser round trip: OK (5.73s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.76s)
+Run #25:
+act
+  Parser round trip: OK (6.20s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.02s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.22s)
+Run #26:
+act
+  Parser round trip: OK (6.50s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.53s)
+Run #27:
+act
+  Parser round trip: OK (5.80s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.85s)
+Run #28:
+act
+  Parser round trip: OK (5.50s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.54s)
+Run #29:
+act
+  Parser round trip: OK (5.69s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.73s)
+Run #30:
+act
+  Parser round trip: OK (5.87s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.02s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.90s)
+Run #31:
+act
+  Parser round trip: OK (5.65s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.69s)
+Run #32:
+act
+  Parser round trip: OK (5.82s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.85s)
+Run #33:
+act
+  Parser round trip: OK (5.46s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.49s)
+Run #34:
+act
+  Parser round trip: OK (6.31s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.34s)
+Run #35:
+act
+  Parser round trip: OK (5.72s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.76s)
+Run #36:
+act
+  Parser round trip: OK (6.20s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.23s)
+Run #37:
+act
+  Parser round trip: OK (5.81s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.85s)
+Run #38:
+act
+  Parser round trip: OK (6.44s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.06s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.50s)
+Run #39:
+act
+  Parser round trip: OK (6.98s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.02s)
+Run #40:
+act
+  Parser round trip: OK (6.45s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.50s)
+Run #41:
+act
+  Parser round trip: OK (5.62s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.66s)
+Run #42:
+act
+  Parser round trip: OK (5.55s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.59s)
+Run #43:
+act
+  Parser round trip: OK (6.92s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.97s)
+Run #44:
+act
+  Parser round trip: OK (7.12s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.15s)
+Run #45:
+act
+  Parser round trip: OK (4.95s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (4.98s)
+Run #46:
+act
+  Parser round trip: OK (7.02s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.06s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.08s)
+Run #47:
+act
+  Parser round trip: OK (7.22s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.26s)
+Run #48:
+act
+  Parser round trip: OK (4.68s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (4.72s)
+Run #49:
+act
+  Parser round trip: OK (6.18s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.23s)
+Run #50:
+act
+  Parser round trip: OK (6.99s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.02s)
+Run #51:
+act
+  Parser round trip: OK (6.60s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.65s)
+Run #52:
+act
+  Parser round trip: OK (5.58s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.63s)
+Run #53:
+act
+  Parser round trip: OK (4.78s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (4.81s)
+Run #54:
+act
+  Parser round trip: OK (5.77s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.82s)
+Run #55:
+act
+  Parser round trip: OK (6.87s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.08s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.95s)
+Run #56:
+act
+  Parser round trip: OK (5.49s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.52s)
+Run #57:
+act
+  Parser round trip: OK (6.75s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.79s)
+Run #58:
+act
+  Parser round trip: OK (7.08s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.12s)
+Run #59:
+act
+  Parser round trip: OK (5.47s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.51s)
+Run #60:
+act
+  Parser round trip: OK (6.01s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.05s)
+Run #61:
+act
+  Parser round trip: OK (7.23s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.27s)
+Run #62:
+act
+  Parser round trip: OK (6.83s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.87s)
+Run #63:
+act
+  Parser round trip: OK (5.51s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.54s)
+Run #64:
+act
+  Parser round trip: OK (6.84s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.88s)
+Run #65:
+act
+  Parser round trip: OK (6.26s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.30s)
+Run #66:
+act
+  Parser round trip: OK (6.59s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.61s)
+Run #67:
+act
+  Parser round trip: OK (6.35s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.38s)
+Run #68:
+act
+  Parser round trip: OK (7.47s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.51s)
+Run #69:
+act
+  Parser round trip: OK (6.67s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.06s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.73s)
+Run #70:
+act
+  Parser round trip: OK (7.61s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.65s)
+Run #71:
+act
+  Parser round trip: OK (6.66s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.69s)
+Run #72:
+act
+  Parser round trip: OK (6.14s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.18s)
+Run #73:
+act
+  Parser round trip: OK (5.81s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.85s)
+Run #74:
+act
+  Parser round trip: OK (5.17s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.20s)
+Run #75:
+act
+  Parser round trip: OK (6.48s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.52s)
+Run #76:
+act
+  Parser round trip: OK (6.46s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.49s)
+Run #77:
+act
+  Parser round trip: OK (8.56s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (8.59s)
+Run #78:
+act
+  Parser round trip: OK (6.01s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.05s)
+Run #79:
+act
+  Parser round trip: OK (5.79s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.05s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.84s)
+Run #80:
+act
+  Parser round trip: OK (7.51s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.54s)
+Run #81:
+act
+  Parser round trip: OK (6.49s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.52s)
+Run #82:
+act
+  Parser round trip: OK (7.32s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.36s)
+Run #83:
+act
+  Parser round trip: OK (7.51s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.55s)
+Run #84:
+act
+  Parser round trip: OK (5.29s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.33s)
+Run #85:
+act
+  Parser round trip: OK (6.00s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.03s)
+Run #86:
+act
+  Parser round trip: OK (6.50s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.53s)
+Run #87:
+act
+  Parser round trip: OK (6.47s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.51s)
+Run #88:
+act
+  Parser round trip: OK (7.06s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.09s)
+Run #89:
+act
+  Parser round trip: OK (6.12s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.15s)
+Run #90:
+act
+  Parser round trip: OK (7.76s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.80s)
+Run #91:
+act
+  Parser round trip: OK (7.17s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (7.21s)
+Run #92:
+act
+  Parser round trip: OK (6.11s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.01s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.14s)
+Run #93:
+act
+  Parser round trip: OK (5.69s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.72s)
+Run #94:
+act
+  Parser round trip: OK (6.59s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.62s)
+Run #95:
+act
+  Parser round trip: OK (5.36s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.39s)
+Run #96:
+act
+  Parser round trip: OK (4.55s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (4.59s)
+Run #97:
+act
+  Parser round trip: OK (4.95s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.00s)
+Run #98:
+act
+  Parser round trip: OK (6.36s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.04s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.40s)
+Run #99:
+act
+  Parser round trip: OK (5.79s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (5.82s)
+Run #100:
+act
+  Parser round trip: OK (6.93s)
+    +++ OK, passed 100 tests.
+  Type inference:    OK (0.03s)
+    +++ OK, passed 100 tests.
+  Placeholder:       OK
+    +++ OK, passed 100 tests.
+
+All 3 tests passed (6.96s)
+All 100 runs produced the expected output.
