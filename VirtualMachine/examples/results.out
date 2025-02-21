@@ -1,0 +1,60 @@
+
+Executing app.ml
+42
+Elapsed time: 0.0001
+
+
+Executing calls.ml
+83
+Elapsed time: 0.0001
+
+
+Executing fact.ml
+120
+Elapsed time: 0.0001
+
+
+Executing fib.ml
+8
+Elapsed time: 0.0001
+
+
+Executing fold.ml
+10
+Elapsed time: 0.0001
+
+
+Executing foo.ml
+15
+Elapsed time: 0.0001
+
+
+Executing list_gc.ml
+11
+Elapsed time: 0.0082
+
+
+Executing list_gc2.ml
+50050000
+Elapsed time: 0.2008
+
+
+Executing list_sum.ml
+500500
+Elapsed time: 0.0013
+
+
+Executing read_list.ml
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+55
+Elapsed time: 0.0002
+
